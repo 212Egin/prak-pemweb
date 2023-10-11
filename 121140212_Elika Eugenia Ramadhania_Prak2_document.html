@@ -1,0 +1,111 @@
+<!-- by ELIKA EUGENIA RAMADHANIA - 121140212-->
+<!-- Praktikum Pemrograman Web RB - Tugas 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <img src="./gambar.jpeg"
+            alt="gambar egin"
+            class="gambar">
+    <div class="side">
+        <h1>EGIN</h1>
+        <h3>Elika Eugenia Ramadhania</p>
+        </h3>
+    </div>
+        </header>
+        <nav class="navbar">
+            <li class="menu"><a href="https://siakad.itera.ac.id/">siakad</a></li>
+            <li class="menu"><a href="https://kuliah.itera.ac.id/">e learning</a></li>
+            <li class="menu"><a href="https://github.com/212Egin/">github</a></li>
+        </nav>
+
+        <section class="tentang" align="center">
+            <h2 >Tentang Saya</h2>
+            <p>Saya lahir di kota pempek yaitu di Kota Palembang pada tanggal 11 November 2003. Mahasiswa semester 5 Teknik Informatika dari Institut Teknologi Sumatera.</p>
+            <video src="./vidMarsITERA.mp4" controls></video>
+        </section>
+
+        <section class="Pengalaman">
+            <h2 align="center">Pengalaman Berorganisasi</h2>
+            <table class="table" border="1" align="center">
+                <thead>
+                    <tr class="judul"> 
+                        <th rowspan="2">No</th>
+                        <th rowspan="2">Nama Kegiatan</th>
+                        <th rowspan="2">Posisi</th>
+                        <th colspan="2">Waktu</th>
+                    </tr>
+                    <tr class="judul">
+                            <th>Mulai</th>
+                            <th>Selesai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="isi">1</td>
+                        <td>LDOP Arithmatic 5.0</td>
+                        <td>Staff Mentor</td>
+                        <td>Juni 2023</td>
+                        <td>Sekarang</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kabinet Nawasena HMIF ITERA</td>
+                        <td>Staff Divisi Pengabdian Masyarakat </td>
+                        <td>Maret 2023</td>
+                        <td>Sekarang</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Musyawarah Anggota HMIF ITERA </td>
+                        <td>Staff Divisi Kesekretariatan</td>
+                        <td>Februari 2023</td>
+                        <td>Maret 2023</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>First Gathering Informatika 22</td>
+                        <td>Staff Divisi Tugas</td>
+                        <td>September 2022 </td>
+                        <td>September 2022 </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+    
+                </tfoot>
+            </table>
+        </section>
+
+    </table>
+
+    <section class="form"> 
+        <form action="jawaban.php" method="POST"></form>
+
+        <h3 class="h3">Hubungi saya</h3>
+        <label for="email">Email</label> :
+        <input type="text" placeholder="masukkan email" id="email">
+
+        <h3 class="h3">Apakah Teknik Informatika sulit?</h3>
+        <input type="radio" name="soal"> Iya <br>
+        <input type="radio" name="soal"> Tidak <br>
+
+        <h3 class="h3" for="apa">Apa mata kuliah prodi favorit anda?</h3>
+        <input type="checkbox" nama="a" id="a" value="ini"> Algoritma Struktur Data <br> 
+        <input type="checkbox" nama="a" id="a" value="ini"> Pemrograman Berbasis Objek <br>
+        <input type="checkbox" nama="a" id="a" value="ini"> Basis Data <br>
+        <input type="checkbox" nama="a" id="a" value="ini"> Pemrograman Web <br>
+        <input type="checkbox" nama="a" id="a" value="ini"> Jaringan Komputer <br>
+        <br>
+        <button class="btn" type="submit">kirim</button>
+     </section>   
+    </div>
+</body>
+
+</html>
