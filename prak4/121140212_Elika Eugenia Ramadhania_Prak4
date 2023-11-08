@@ -1,0 +1,58 @@
+<!-- by Elika Eugenia Ramadhania - 1211402121-->
+<!-- Pemrograman Web RB - Tugas 4-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hitung Jumlah Bilangan Ganjil dan Genap</title>
+    <style>
+    .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: rgb(222, 222, 192);
+    border: solid;
+    width: 800px;
+    padding: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container" >
+        <header class="head">
+    <h1 align="center">Menghitung Bilangan Ganjil dan Genap</h1>
+    
+    <form id="inputForm" align="center">
+        <label for="inputNumber">Masukkan bilangan bulat positif :</label><br>
+        <br><input type="number" id="inputNumber" min="1" step="1">
+        <button type="button" onclick="hitung()">Hitung</button>
+    </form>
+    <p id="result" align="center"></p>
+
+    <script>
+        function hitung() {
+            var inputNumber = document.getElementById('inputNumber').value;
+            var totalGanjil = 0;
+            var totalGenap = 0;
+
+            if (inputNumber >= 1) {
+                for (var i = 1; i <= inputNumber; i++) {
+                    if (i % 2 === 0) {
+                        totalGenap++;
+                    } else {
+                        totalGanjil++;
+                    }
+                }
+
+                var result = "Hasil 1 sampai " + inputNumber + "<br>";
+                result += "Jumlah bilangan ganjil: " + totalGanjil + "<br>";
+                result += "Jumlah bilangan genap: " + totalGenap;
+
+                document.getElementById('result').innerHTML = result;
+            } else {
+                document.getElementById('result').innerHTML = "Masukkan bilangan bulat positif yang valid.";
+            }
+        }
+    </script>
+</body>
+</html>
