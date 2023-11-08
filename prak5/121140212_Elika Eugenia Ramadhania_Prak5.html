@@ -1,1 +1,49 @@
+<!-- by Elika Eugenia Ramadhania - 121140212-->
+<!-- Pemrograman Web RB - Tugas 5-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Praktikum Pemrograman Web 5</title>
+
+    <link rel="stylesheet" href="lprak4.css" />
+  </head>
+  <body>
+    <header class="header" align="center">
+      <h3>Kalkulator Sederhana</h3>
+    </header>
+    <section class="main-content">
+      <div class="kalkulator">
+        <div class="hasil">
+         
+          <h3 id="nilai-hasil"></h3>
+        </div>
+       
+        <button class="tombol" onclick="add('7')">7</button>
+        <button class="tombol" onclick="add('8')">8</button>
+        <button class="tombol" onclick="add('9')">9</button>
+        
+        <button class="tombol operator" onclick="bagi()">/</button>
+        <button class="tombol" onclick="add('4')">4</button>
+        <button class="tombol" onclick="add('5')">5</button>
+        <button class="tombol" onclick="add('6')">6</button>
+        
+        <button class="tombol operator" onclick="kali()">x</button>
+        <button class="tombol" onclick="add('1')">1</button>
+        <button class="tombol" onclick="add('2')">2</button>
+        <button class="tombol" onclick="add('3')">3</button>
+        
+        <button class="tombol operator" onclick="kurang()">-</button>
+        <button class="tombol" onclick="add('0')">0</button>
+        <button class="tombol" onclick="add('.')">.</button>
+        
+        <button class="tombol operator" onclick="tambah()">+</button>
+        <button class="tombol operator" onclick="hasil()">=</button>
+      </div>
+    </section>
+  
+    <script src="lprak4.js"></script>
+  </body>
+</html>
 
